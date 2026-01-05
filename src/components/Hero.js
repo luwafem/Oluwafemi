@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiMail, FiPhone, FiMapPin, FiDownload, FiChevronDown } from 'react-icons/fi';
+import { FiMail, FiPhone, FiChevronDown } from 'react-icons/fi';
 import { FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {

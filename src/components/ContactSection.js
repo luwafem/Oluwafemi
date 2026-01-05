@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiMail, FiPhone, FiMapPin, FiSend, FiCheck, FiLinkedin } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiSend, FiCheck} from 'react-icons/fi';
 import { FaLinkedin } from 'react-icons/fa';
 
 const ContactSection = () => {

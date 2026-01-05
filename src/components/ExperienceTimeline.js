@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiBriefcase, FiCalendar, FiMapPin, FiChevronRight, FiChevronDown } from 'react-icons/fi';
+import { FiCalendar, FiMapPin, FiChevronRight, FiChevronDown } from 'react-icons/fi';
 
 const ExperienceTimeline = () => {
   const [expandedItem, setExpandedItem] = useState(0);

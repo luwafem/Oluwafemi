@@ -4,17 +4,8 @@ import {
   FiTarget, 
   FiUsers, 
   FiTrendingUp, 
-  FiBarChart2,
-  FiMessageSquare,
   FiZap,
-  FiGlobe,
-  FiPieChart,
   FiChevronRight,
-  FiShield,
-  FiAward,
-  FiClock,
-  FiDollarSign,
-  FiCompass,
   FiStar
 } from 'react-icons/fi';
 
