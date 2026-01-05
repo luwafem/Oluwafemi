@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiMail, FiPhone, FiChevronDown } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiDownload, FiChevronDown } from 'react-icons/fi';
 import { FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
   const [text, setText] = useState('');
   const [cursorVisible, setCursorVisible] = useState(true);
-  const roles = ['Fullstack Developer','Frontend Developer','Project Manager', 'Technical Lead', 'Digital Strategist', 'CTO'];
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  
+  // Define roles array with useMemo to prevent unnecessary re-renders
+  const roles = React.useMemo(() => 
+    ['Fullstack Developer','Frontend Developer','Project Manager', 'Technical Lead', 'Digital Strategist', 'CTO'], 
+    []
+  );
 
   useEffect(() => {
     const currentRole = roles[roleIndex];
@@ -30,7 +35,7 @@ const Hero = () => {
     }, isDeleting ? 50 : 100);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, isDeleting, roleIndex]);
+  }, [charIndex, isDeleting, roleIndex, roles]);
 
   useEffect(() => {
     const cursorInterval = setInterval(() => {
@@ -142,7 +147,7 @@ const Hero = () => {
             {[
               { label: 'Years Experience', value: '5+', color: 'from-purple to-purple-light' },
               { label: 'Projects Delivered', value: '50+', color: 'from-purple-dark to-purple' },
-              { label: 'Teams Led', value: '7+', color: 'from-purple to-purple-dark' },
+              { label: 'Teams Led', value: '15+', color: 'from-purple to-purple-dark' },
               { label: 'Client Satisfaction', value: '100%', color: 'from-purple-light to-purple' },
             ].map((stat, index) => (
               <motion.div
