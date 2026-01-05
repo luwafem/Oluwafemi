@@ -5,7 +5,6 @@ import {
   FiCpu, 
   FiSmartphone, 
   FiDatabase,
-  FiCloud,
   FiTool,
   FiLayout,
   FiGlobe,
